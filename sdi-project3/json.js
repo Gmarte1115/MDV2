@@ -3,21 +3,21 @@
 
 
 var json = {
-	"players":[
+	"characters":[
 		{	
-			"playerName": "Kring",
-			"class": "Warrior",
-			"rank": "General"
+			"charName": "Kring",
+			"charClass": "Warrior",
+			"charRank": "General"
 		},
 		{
-			"playerName": "Morduke",
-			"class": "Mage",
-			"rank": "Wizard"
+			"charName": "Morduke",
+			"charClass": "Mage",
+			"charRank": "Wizard"
 		},
 		{
-			"playerName": "Rengu",
-			"class": "Assassin",
-			"rank": "Elite"
+			"charName": "Rengu",
+			"charClass": "Assassin",
+			"charRank": "Elite"
 		}
 	]
 };
