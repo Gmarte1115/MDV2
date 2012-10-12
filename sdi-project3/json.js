@@ -21,3 +21,29 @@ var json = {
 		}
 	]
 };
+
+
+var json2 = {	
+	"upGrades":[
+			{
+				"weapon": "Sword",
+				"powerUp":"HP +10"
+			},
+			{
+				"weapon": "Hammer",
+				"powerUp":"DEF +10"
+			},
+			{
+				"weapon": "Staff",
+				"powerUp":"AGILITY +10"
+			},
+			{
+				"weapon": "Sceptre",
+				"powerUp":"MP +10"
+			},
+			{
+				"weapon": "Dagger",
+				"powerUp":"SPEED +10"
+			}
+	]
+};
