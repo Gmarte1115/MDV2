@@ -21,7 +21,7 @@ var getCharList = function(json){
 
 var getUpGrade = function(json){
 	for (var i = 0; i<json2.upGrades.length; i++){	//FOR LOOP
-		var equipUpGrade = json2.upGrades[i]			//LOCAL VARIABLES
+		var equipUpGrade = json2.upGrades[i]		
 		console.log("If you choose the " + equipUpGrade.weapon + ", you gain " + equipUpGrade.powerUp)
 	}
 	return equipUpGrade
@@ -30,8 +30,8 @@ var getUpGrade = function(json){
 //Constructor
 var newChar = function (name){
 	var totalData = [];
-	var addData = function (data){
-			totalData.push (data)
+	var addData = function (){
+			totalData.push ()
 	};
 	var getCharData = function (){
 		for (var i=0; i<totalData.length; i++){
