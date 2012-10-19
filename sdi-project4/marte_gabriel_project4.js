@@ -12,7 +12,7 @@ var valPhoneNumFormat = function(checkNum){
 	var phonePattern = /^[0-9-]+[0-9-]+[0-9-]/;
 	if (phonePattern.test(checkNum)) {
 		console.log ("Phone number format is correct");
-	}; else {console.log("Phone number format is incorrect");
+	} else {console.log("Phone number format is incorrect");
 	   };
 };
 
@@ -26,7 +26,7 @@ var valEmailFormat = function(checkEmail){
 	var emailPattern = /^[a-zA-Z0-9]+@[a-zA-Z0-9]+.[a-zA-Z]/
 	if (emailPattern.test(checkEmail)){
 		console.log ("Email format is correct");
-	}; else {console.log("Email format is incorrect");
+	} else {console.log("Email format is incorrect");
 	   };
 };
 
@@ -39,7 +39,7 @@ var valUrl = function(checkUrl){
 	var urlPattern = /^(http[s]?:\/\/){0,1}(www\.){0,1}[a-zA-Z0-9\.\-]+\.[a-zA-Z]{2,5}[\.]{0,1}/;
 	if (urlPattern.test(checkUrl)){
 		console.log ("URL format is correct");
-	}; else {console.log("URL format is incorrect");
+	} else {console.log("URL format is incorrect");
 	   };
 };
 
