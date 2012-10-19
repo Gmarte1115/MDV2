@@ -3,18 +3,17 @@
 //Date: 10/17/12
 //SDI Project 4
 
-//STRING FUNCTIONS LIBRARY
+//FUNCTIONS LIBRARY
 
 //Does a string follow a 123-456-7890 pattern like a phone number?v
 
 var valPhoneNumFormat = function(checkNum){
 	var phoneNum = checkNum;
-	var phonePattern = /^[0-9-]+[0-9-]+[0-9-]/
-	if (phonePattern.test(checkNum))
+	var phonePattern = /^[0-9-]+[0-9-]+[0-9-]/;
+	if (phonePattern.test(checkNum)) {
 		console.log ("Phone number format is correct");
-		else console.log("Phone number format is incorrect");
-	
-	
+	}; else {console.log("Phone number format is incorrect");
+	   };
 };
 
 valPhoneNumFormat("111-111-1111");
@@ -25,11 +24,10 @@ valPhoneNumFormat("111-111-1111");
 var valEmailFormat = function(checkEmail){
 	var emailSample = checkEmail;
 	var emailPattern = /^[a-zA-Z0-9]+@[a-zA-Z0-9]+.[a-zA-Z]/
-	if (emailPattern.test(checkEmail))
+	if (emailPattern.test(checkEmail)){
 		console.log ("Email format is correct");
-		else console.log("Email format is incorrect");
-	
-	
+	}; else {console.log("Email format is incorrect");
+	   };
 };
 
 valEmailFormat("aaa@bbb.ccc")
@@ -39,9 +37,10 @@ valEmailFormat("aaa@bbb.ccc")
 var valUrl = function(checkUrl){
 	var urlSample = checkUrl;
 	var urlPattern = /^(http[s]?:\/\/){0,1}(www\.){0,1}[a-zA-Z0-9\.\-]+\.[a-zA-Z]{2,5}[\.]{0,1}/;
-	if (urlPattern.test(checkUrl))
+	if (urlPattern.test(checkUrl)){
 		console.log ("URL format is correct");
-		else console.log("URL format is incorrect");
+	}; else {console.log("URL format is incorrect");
+	   };
 };
 
 valUrl("https://www.test.com")
@@ -53,44 +52,38 @@ function upCase(string) {
     for(var i=0,l=testString.length; i<l; i++) {
         testString[i] = testString[i].substr(0,1).toUpperCase() + 
                  (testString[i].length > 1 ? testString[i].substr(1).toLowerCase() : "");
-    }
+    };
     return testString.join("");
-}
+};
 
 console.log(upCase("testing this"));
 
-//Given a string version of a number such as "42", return the value as an actual Number, such as 42.
+//Find the smallest value in an array that is greater than a given number
 
-var convertNum = function(numString){
-	var numList = {
-		"0" : 0,
-		"1" : 1,
-		"2" : 2,
-		"3" : 3,
-		"4" : 4,
-		"5" : 5,
-		"6" : 6,
-		"7" : 7,
-		"8" : 8,
-		"9" : 9
-	}
-
-	
+var minValue = function (array) {
+	var	min = array[0];
+    for (i=0; i<array.length; i++) {
+	    if (array[i]<min) {
+		    min = array[i];
+		};
+    };
+    return min;
 };
-console.log(convertNum("42"));
 
+console.log (minValue([2, 4, 6, 8, 10]));
 
+//Find the total value of just the numbers in an array, even if some of the items are not numbers.
 
+var totalVal = function (array) {
+	var sum = 0;
+	for (var i=0; i<array.length; i++) {
+		if (!isNaN(parseInt(array[i]))) {sum += array[i]; 
+		console.log(sum)
+		};
+	};
+};
 
-
-
-
-
-
-
-
-
-
+totalVal([2, 4, 6, 8, 10, "a", "b", "c", "d", "e"])
 
 
 
